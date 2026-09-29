@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>(가상) 행정정보 통합관리 기본법 조문 검색</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <h1>행정정보 통합관리 기본법</h1>
+    <p class="sub">가상 법령 · 조문 검색</p>
+    <div class="search">
+      <label for="q" class="sr">본문 검색</label>
+      <input id="q" type="search" placeholder="본문에서 찾을 키워드 (예: 과태료, 승인)" autocomplete="off">
+      <output id="count" aria-live="polite">결과 0건</output>
+    </div>
+  </header>
+
+  <main>
+    <div id="list" class="list"></div>
+    <p id="msg" class="msg" hidden></p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
